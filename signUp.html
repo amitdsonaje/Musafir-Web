@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                         initial-scale=1.0">
+    <title>Musafir</title>
+    <link rel="stylesheet" 
+          href="style.css">
+          <script>
+              
+              
+          </script>
+</head>
+
+<body>
+       <nav>
+           <img src="./images/logo.png">
+           <input type="checkbox" id="check">
+           <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+           </label>
+           <label class="logo">MUSAFIR</label>
+              <ul>
+                     <li><a class="menu1" href="index.html" onclick="setActiveLink(this);" style="text-decoration: none;">Home</a></li>
+                     <li><a class="menu1" href="signUp.html" onclick="setActiveLink(this);toggleSignInSection();" style="text-decoration: none;">Sign In</a></li>
+                     <li><a class="menu1" href="index.html#offers" onclick="setActiveLink(this);" style="text-decoration: none;">Offers</a></li>
+                     <li><a class="menu1" id="openFormBtn" href="index.html#contactus" onclick="setActiveLink(this);" style="text-decoration: none;">Contact Us</a></li>
+              </ul>
+          </nav>
+          
+          <section id="signInSection">
+       <div class="container">
+
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+
+        <div class="form-section">
+
+            <!-- login form -->
+            <div class="login-box">
+                <h3>Welcome Back!</h3>
+                <input type="email" 
+                       class="email ele" 
+                       placeholder="Email Address">
+                <input type="password"
+                       class="password ele" 
+                       placeholder="Password">
+                <p class="forgotPassword"><a href="#">Forgot Password</a></p>
+                <button class="clkbtn">Login</button>
+            </div>
+
+            <!-- signup form -->
+            <div class="signup-box">
+                <input type="text" name="name" id="name"
+                       class="name ele" 
+                       placeholder="Full Name">
+                <input type="email" name="email" id="email"
+                       class="email ele" 
+                       placeholder="Email Address">
+                <input type="text" name="mob" id="mob"
+                       class="mob ele" 
+                       placeholder="Mobile No">
+                <input type="password" name="password" id="password"
+                       class="password ele" 
+                       placeholder="Password">
+                <input type="password" name="confPassword" id="confPassword"
+                       class="password ele" 
+                       placeholder="Confirm Password">
+                <button class="clkbtn" onclick="onformadd()">Signup</button>
+            </div>
+        </div>
+    </div>
+          </section>
+    <script src="signIn.js"></script>
+</body>
+</html>
